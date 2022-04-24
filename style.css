@@ -44,7 +44,8 @@ body{
 
 /* general styles */
 .container{
-    width: 80%;
+    max-width: 1080px;
+    padding: 0 1rem;
     margin:  0 auto;
 }
 
@@ -160,7 +161,7 @@ main .container .left .profile{
 .left .sidebar{
     margin-top: 1rem;
     background-color: var(--color-white);
-    border-radius: var(--border-radius);
+    border-radius: var(--card-border-radius);
 }
 .left .sidebar .menu-item{
     display: flex;
@@ -175,10 +176,12 @@ main .container .left .profile{
     width: 100%;
     text-align: left;
     display: flex;
+    align-items: center;
 
 }
-.left .sidebar .menu-item:hover{
+.left .sidebar .menu-item:not(:first-child):hover{
     background-color: var(--color-light);
+    border-left: 3px solid var(--color-primary);
 }
 .left .sidebar i{
     font-size: 1.4rem;
@@ -198,11 +201,12 @@ main .container .left .profile{
 }
 
 .left .sidebar h3{
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     font-size: 1rem;
 }
-.left .sidebar .active{
-    background-color: var(--color-light);
+.left .sidebar .active:not(:first-child){
+    /* background-color: var(--color-light); */
+    border-left: 3px solid var(--color-primary);
 }
 .left .sidebar  .active::before{
     height: 100%;
