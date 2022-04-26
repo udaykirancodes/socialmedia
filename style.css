@@ -19,6 +19,30 @@
     --card-padding:1rem; 
     --sticky-top-left:6.4rem; 
     --sticky-top-right:-18rem; 
+
+
+    --logo:1.5rem;
+    --h1-font-size:2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .815rem;
+
+    
+}
+
+@media screen and (max-width:768px) {
+    :root{
+        /* font sizes */
+        --big-font-size:1rem;
+        --h1-font-size:1.75rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --normal-font-size: .983rem;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
 }
 
 *,
@@ -32,6 +56,7 @@
     border: none;
     list-style: none;
 }
+
 i{
     font-size: 1.4rem;
 }
@@ -48,14 +73,48 @@ body{
     padding: 0 1rem;
     margin:  0 auto;
 }
-
+.create{
+    position: relative;
+}
 .profile-photo{
     width: 2.7rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
     overflow: hidden;
 }
-
+.profile-options{
+    position: absolute;
+    top: 135%;
+    right: 0;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 3px 0 rgba(0 , 0,0,.1);
+    border-radius: 10px;
+    padding: 10px;
+    width: 8rem;
+    height: 0rem;
+    display: none;
+    transition: all 2000ms ;
+}
+.profile-options.show {
+    display: flex;
+    height: 10rem;
+    flex-direction: column;
+    overflow: hidden;
+}
+.navoptions .uil{
+    margin: 0;  
+    margin: 0;
+}
+.profile-options .navoptions{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px 0 ;
+}
+.profile-options.show .navoptions:hover{
+    background-color: #ddd;
+    border-radius: 10px;
+}
 img{
     width: 100%;
     display: block;
@@ -96,6 +155,7 @@ nav{
 .logo {
     color: var(--color-primary);
     cursor: pointer;
+    font-size: var(--logo);
 }
 nav .container{
     display: flex;
@@ -105,7 +165,8 @@ nav .container{
 nav .search-bar{
     background-color: var(--color-light);
     border-radius: var(--border-radius);
-    padding: var(--search-padding);
+    display: flex;
+    align-items: center;
 }
 nav .search-bar input[type="search"]{
     background-color: transparent;
@@ -189,15 +250,18 @@ main .container .left .profile{
     margin-left: 1rem;
     position: relative;
 }
-.left .sidebar i .notification-count{
+.notifref {
+    position: relative;
+}
+i .notification-count {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.3rem;
     background-color: var(--color-danger);
     color: white;
     font-size: .6rem;
     border-radius: .8rem;
     padding: .1rem .2rem;
-    position: absolute;
-    top: -0.2rem;
-    right: -0.3rem;
 }
 
 .left .sidebar h3{
@@ -234,38 +298,38 @@ main .container .left .profile{
     padding: 1rem 0;
 }
 /* notification popup */
-.left .notifications-popup{
-    display: none;
+.notifications-popup{
+
     position: absolute;
-    top: 0px;
-    left: 110%;
-    width: 30rem;
+    top: 4rem;
+    right: 70%;
+    width: 20rem;
     background-color: var(--color-white);
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
-    box-shadow: 0 0 2rem hsl(var(--color-primary) ,75% , 60% 25% );
+    box-shadow: 0 0 1px #ddd;
     z-index: 8;
+    display: none;
 }
-
-.left .notifications-popup::before{
-    content: "";
-    background-color: var(--color-white);
-    width: 1.2rem;
-    height: 1.2rem;
+.notifications-popup.show {
     display: block;
-    position: absolute;
-    left: -0.6rem;
-    top:20px;
-    transform: rotate(45deg);
+}
+.notifications-popup {
+    font-size: var(--smaller-font-size);
+    transition: 1500ms all;
+}
+.notifications-popup .profile-photo{
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
-.left .notifications-popup > div{
+.notifications-popup > div{
     display: flex;
     align-items: start;
     gap: 1rem;
     margin-bottom: 1rem;
 }
-.left .notifications-popup small{
+.notifications-popup small{
     display: block;
 }
 
@@ -381,3 +445,177 @@ main .container .right{
 .accept{
     margin-right:5px;
 }
+
+
+/* chats */
+.allchats{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.chats{
+    background-color: var(--color-white);
+    /* border-radius: var(--card-border-radius); */
+    padding: var(--card-padding) 0;    
+    /* margin: 1rem 0; */
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;  
+}
+.chats .profile{
+    display: flex;
+    height: 2rem;
+    align-items: center;
+    aspect-ratio: 1/1;
+    padding: 1rem 0;
+}
+.chatRef{
+    position: relative;
+}
+.chatactive{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    background-color: var(--color-success);
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.chats .profile-photo{
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.chats .profile-photo img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.conversations h4{
+    margin-bottom: 5px;
+}
+.chats .handle .name{
+    font-weight: 550;
+    margin-bottom: 0;
+    font-size: var(--normal-font-size);
+}
+.chats .handle p{
+    margin-top: 0;
+    font-size: var(--small-font-size);
+}
+
+
+::-webkit-scrollbar{
+    background-color: var(--color-gray);
+    width: 3px;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--color-light);
+    width: 3px;
+}
+::-webkit-scrollbar-thumb{
+    width: 3px;
+    background-color: var(--color-gray);
+    border-radius: 5px;
+}
+.activechat{
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: var(--card-padding);
+    position: relative;
+}
+.activechat .chathead{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.activechat .chathead .profile{
+    display: flex;
+    align-items: center;
+}
+.activechat .profile .profile-photo{
+    margin-right: 1rem;
+}
+.activechat .profile .head h4 , .activechat .profile .head p{
+    font-size: var(--small-font-size);
+}
+.activechat .chatRef .chatactive{
+    right: 1rem;
+}
+.activechat .chatbox .profile-photo{
+    width: 2rem;
+    height: 2rem;
+}
+
+.conversations{
+    height:60vh;
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    overflow: auto;
+}
+
+.singlechat{
+    display: flex;
+    margin: 10px 0;
+    max-width:70%;
+}
+
+
+.chatleft .profile{
+    display: flex;
+}
+.singlechat .profile .profile-photo {
+    height: 2rem;
+    width: 2rem;
+}
+.chatright{
+    margin-left: auto;
+    margin-right: 10px;
+}
+.chatright{
+    display: grid;
+    grid-template-columns: auto 60%;
+    text-align: right;
+}
+.message{
+    padding: 5px 8px;
+    width: max-content;
+    float: right;
+    color: #000;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 1.25rem;
+}
+
+
+.chatbottom{
+    padding: 5px 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    border-bottom-left-radius: var(--card-border-radius); 
+    border-bottom-right-radius: var(--card-border-radius); 
+}
+.chatbottom .chatinput{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    margin: 0 auto;
+}
+.chatinput .messageinput{
+    border-bottom: 1px solid var(--color-light);
+    width: 80%;
+    height: 2rem;
+    font-size: var(--h4-font-size);
+}
+.chatinput .btn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+
+/* login & logout  */
+
+
+/* sign in page */

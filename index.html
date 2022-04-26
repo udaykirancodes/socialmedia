@@ -10,19 +10,65 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <nav>
         <div class="container">
-            <h2 class="logo">UdayChats</h2>
+            <a href="./index.html">
+                <h2 class="logo">UdayChats</h2>
+            </a>
             <div class="search-bar">
                 <i class="uil uil-search"></i>
                 <input type="search" placeholder="Search for creators, inspirations and projects">
             </div>
             <div class="create">
-                <label for="#create-post" class="btn btn-primary">Create</label>
+                <a href="./chats.html" class="notifref"><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
+                </a>
+                <span class="notifref Notify "><i class="uil uil-bell"><small class="notification-count">9+</small></i>
+                </span>
                 <div class="profile-photo">
                     <img src="./images/profile-1.jpg" alt="">
+                </div>
+                <div class="notifications-popup show">
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Sweet_lover_uday</b>accepted your request
+                            <small class="text-muted">2 Days Ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Udaykiran</b>Messaged to you
+                            <small class="text-muted">4 Days Ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Udaykiran</b>Messaged to you
+                            <small class="text-muted">4 Days Ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-options">
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-user-circle"></i>Profile
+                   </a>                    
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-palette"></i>Theme  
+                   </a>                    
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-signout"></i>Logout
+                   </a>                    
                 </div>
             </div>
         </div>
@@ -59,36 +105,6 @@
                         <span><i class="uil uil-bell"><small class="notification-count">9+</small></i>
                             <h3>Notifications</h3>
                         </span>
-                        <!-- notification popup -->
-                        <div class="notifications-popup">
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./images/profile-2.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Sweet_lover_uday</b>accepted your request
-                                    <small class="text-muted">2 Days Ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./images/profile-3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Udaykiran</b>Messaged to you
-                                    <small class="text-muted">4 Days Ago</small>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="profile-photo">
-                                    <img src="./images/profile-3.jpg" alt="">
-                                </div>
-                                <div class="notification-body">
-                                    <b>Udaykiran</b>Messaged to you
-                                    <small class="text-muted">4 Days Ago</small>
-                                </div>
-                            </div>
-                        </div>
                     </a>
                     <a class="menu-item">
                         <span><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
@@ -117,22 +133,18 @@
                     </a>
                     </li>
                 </div>
-                <!-- End of the sidebar -->
-                <label for="create-post" class="btn btn-primary">Create Post</label>
             </div>
 
             <!-- middle -->
             <div class="middle">
-                <!-- Form -->
                 <div class="create-post">
                     <div class="profile-photo">
-                        <img src="/images/profile-1.jpg" alt="">
+                        <img src="./images/profile-10.jpg" alt="">
                     </div>
                     <input type="text" placeholder="What's on your mind ?" id="create-post">
                     <input type="submit" value="Post" class="btn btn-primary">
                 </div>
 
-                <!-- feeds -->
                 <div class="feeds">
                     <div class="feed">
                         <div class="head">
@@ -355,11 +367,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- right -->
+            </div> 
+            
+            
             <div class="right">
                 <div class="friend-requests">
-                    <h4>Requests</h4>
                     <div class="request">
                         <div class="info">
                             <div class="profile-photo">
@@ -379,8 +391,8 @@
                                     <button class="btn">
                                         Decline   
                                     </button>
-                        </div>
-                    </div>
+                                </div>
+                            </div>
                     <div class="request">
                         <div class="info">
                             <div class="profile-photo">
@@ -394,12 +406,12 @@
                             </div>
                         </div>
                         <div class="action">
-                                    <button class="btn accept btn-primary">
-                                        Accept 
-                                    </button>
-                                    <button class="btn">
-                                        Decline   
-                                    </button>
+                            <button class="btn accept btn-primary">
+                                Accept 
+                            </button>
+                            <button class="btn">
+                                Decline   
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -449,6 +461,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
         </div>
     </main>
