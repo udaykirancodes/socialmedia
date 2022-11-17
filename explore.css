@@ -1,0 +1,18 @@
+main{
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.explore-page .middle{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.middle .feeds{
+    display: grid;
+    gap:1rem 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.explore-page .photo{
+    height: 200px;
+    /* width: ; */
+}

@@ -54,9 +54,13 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
+    transition: 200ms;
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+    color: inherit;
+}
 i{
     font-size: 1.4rem;
 }
@@ -446,65 +450,6 @@ main .container .right{
     margin-right:5px;
 }
 
-
-/* chats */
-.allchats{
-    max-height: 80vh;
-    overflow-y: auto;
-}
-
-.chats{
-    background-color: var(--color-white);
-    /* border-radius: var(--card-border-radius); */
-    padding: var(--card-padding) 0;    
-    /* margin: 1rem 0; */
-    border-bottom: 1px solid #ddd;
-    cursor: pointer;  
-}
-.chats .profile{
-    display: flex;
-    height: 2rem;
-    align-items: center;
-    aspect-ratio: 1/1;
-    padding: 1rem 0;
-}
-.chatRef{
-    position: relative;
-}
-.chatactive{
-    position: absolute;
-    bottom: 0;
-    right: 5px;
-    background-color: var(--color-success);
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    border: 4px solid white;
-}
-.chats .profile-photo{
-    border-radius: 50%;
-    margin-right: 7px;
-}
-.chats .profile-photo img{
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-}
-
-.conversations h4{
-    margin-bottom: 5px;
-}
-.chats .handle .name{
-    font-weight: 550;
-    margin-bottom: 0;
-    font-size: var(--normal-font-size);
-}
-.chats .handle p{
-    margin-top: 0;
-    font-size: var(--small-font-size);
-}
-
-
 ::-webkit-scrollbar{
     background-color: var(--color-gray);
     width: 3px;
@@ -521,7 +466,7 @@ main .container .right{
 }
 .activechat{
     background-color: var(--color-white);
-    border-radius: var(--border-radius);
+    border-radius: var(--normal-font-size);    
     padding: var(--card-padding);
     position: relative;
 }
@@ -547,75 +492,68 @@ main .container .right{
     height: 2rem;
 }
 
-.conversations{
-    height:60vh;
-    background-color: var(--color-white);
-    border-radius: var(--card-border-radius);
-    padding: var(--card-padding);
-    overflow: auto;
-}
-
-.singlechat{
-    display: flex;
-    margin: 10px 0;
-    max-width:70%;
-}
-
-
-.chatleft .profile{
-    display: flex;
-}
-.singlechat .profile .profile-photo {
-    height: 2rem;
-    width: 2rem;
-}
-.chatright{
-    margin-left: auto;
-    margin-right: 10px;
-}
-.chatright{
-    display: grid;
-    grid-template-columns: auto 60%;
-    text-align: right;
-}
-.message{
-    padding: 5px 8px;
-    width: max-content;
-    float: right;
-    color: #000;
-    background-color: var(--color-primary);
-    color: white;
-    border-radius: 1.25rem;
-}
-
-
-.chatbottom{
-    padding: 5px 1rem;
-    width: 100%;
-    display: flex;
-    align-items: center;   
-    border-bottom-left-radius: var(--card-border-radius); 
-    border-bottom-right-radius: var(--card-border-radius); 
-}
-.chatbottom .chatinput{
-    width: 100%;
-    padding: 5px;
-    display: flex;
-    margin: 0 auto;
-}
-.chatinput .messageinput{
-    border-bottom: 1px solid var(--color-light);
-    width: 80%;
-    height: 2rem;
-    font-size: var(--h4-font-size);
-}
-.chatinput .btn {
-    background-color: var(--color-primary);
-    color: white;
-}
-
 
 /* login & logout  */
 
 
 /* sign in page */
+
+.search-bar{
+    position: relative;
+}
+.search-active{
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+}
+.search-users-list{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    width: 100%;
+    padding: var(--card-padding);
+    /* box-shadow: 0 0  var(--color-dark); */
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    left:  0;
+    width: 100%;
+}
+.search-users-list .request{
+    margin: 10px 0;
+}
+.search-users-list .request:hover{
+    background-color: var(--color-light);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+}
+.search-users-list .request .info{
+    display: flex;
+    flex-direction: row;
+}
+.search-users-list .request .info .profile-photo{
+    margin-right: 1rem;
+}
+
+
+
+@media screen and (max-width:968px) {
+    .right {
+        display: none;
+    }
+    main .container{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        /* grid-template-columns: 18vh auto 20vh; */
+        column-gap: 2rem;
+        position: relative;
+    }
+}
+@media screen and (max-width:768px) {
+    .left , .right {
+        display: none;
+    }
+    main .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding:var(--smaller-font-size);
+    }
+}

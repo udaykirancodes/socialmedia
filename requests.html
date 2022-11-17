@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UdayChats - A Social Media Application to connect with your frinds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="requests.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <a href="./index.html">
+                <h2 class="logo">UdayChats</h2>
+            </a>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, inspirations and projects">
+            </div>
+            <div class="create">
+                <a href="./chats.html" class="notifref"><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
+                </a>
+                <span class="notifref Notify "><i class="uil uil-bell"><small class="notification-count">9+</small></i>
+                </span>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
+                <div class="notifications-popup hide">
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Sweet_lover_uday</b>accepted your request
+                            <small class="text-muted">2 Days Ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Udaykiran</b>Messaged to you
+                            <small class="text-muted">4 Days Ago</small>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" alt="">
+                        </div>
+                        <div class="notification-body">
+                            <b>Udaykiran</b>Messaged to you
+                            <small class="text-muted">4 Days Ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-options">
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-user-circle"></i>Profile
+                   </a>                    
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-palette"></i>Theme  
+                   </a>                    
+                   <a href="./chats.html" class="navoptions">
+                    <i class="uil uil-signout"></i>Logout
+                   </a>                    
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container requests">
+            <!-- left -->
+            <div class="left">
+                <div class="profile">
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
+                    </div>
+                    <div class="handle">
+                        <h4>UdayCodes</h4>
+                        <p class="text-muted">@udaycodes</p>
+                    </div>
+                </div>
+
+                <!-- sidebar  -->
+                <div class="sidebar">
+                    <a href="./index.html" class="menu-item active">
+                        <span><i class="uil uil-estate"></i>
+                            <h3>Home</h3>
+                        </span>
+                    </a>
+                    <a href="./explore.html" class="menu-item active">
+                        <span><i class="uil uil-compass"></i>
+                            <h3>Explore</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item" id="notifications">
+                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i>
+                            <h3>Notifications</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
+                            <h3>Bookmarks</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-bookmark"></i>
+                            <h3>Bookmarks</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-chart-line"></i>
+                            <h3>Analytics</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-palette"></i>
+                            <h3>Theme</h3>
+                        </span>
+                    </a>
+                    <a class="menu-item">
+                        <span><i class="uil uil-setting"></i>
+                            <h3>Settings</h3>
+                        </span>
+                    </a>
+                    </li>
+                </div>
+            </div>
+            <div class="right">
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                                    <button class="btn accept btn-primary">
+                                        Accept 
+                                    </button>
+                                    <button class="btn">
+                                        Decline   
+                                    </button>
+                                </div>
+                            </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-6.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn accept btn-primary">
+                                Accept 
+                            </button>
+                            <button class="btn">
+                                Decline   
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-requests">
+                    <h4>Suggetions</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                                    <button class="btn accept btn-primary">
+                                        Follow 
+                                    </button>
+                                    <button class="btn">
+                                        Cancel   
+                                    </button>
+                                </div>
+                            </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-6.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn accept btn-primary">
+                                Follow  
+                            </button>
+                            <button class="btn">
+                                Cancel    
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="friend-requests">
+                    <h4>Suggetions</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                                    <button class="btn accept btn-primary">
+                                        Follow  
+                                    </button>
+                                    <button class="btn">
+                                        Cancel   
+                                    </button>
+                        </div>
+                    </div>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-3.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5>Uday Kiran</h5>
+                                <p class="text-muted">
+                                    9 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                                    <button class="btn accept btn-primary">
+                                        Follow  
+                                    </button>
+                                    <button class="btn">
+                                        Cancel    
+                                    </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+
+</html>

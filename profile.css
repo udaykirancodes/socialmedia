@@ -1,0 +1,213 @@
+
+
+.profile-top{
+    height: auto;
+}
+.profile{
+    margin-top: 100px;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--card-border-radius);
+    background-color: var(--color-white);
+    /* padding: var(--card-padding); */
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+}
+.profile-left{
+    height: 100%;
+    padding: var(--card-padding);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-image-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.profile-image{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    border-radius: var(--card-border-radius);
+}
+
+.profile-right{
+    padding: var(--card-padding);
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+    gap: 1rem;
+}
+.profile-right .right-top{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* place-content: center; */
+    align-self: center;
+    padding: var(--card-padding);
+}
+.right-bottom{
+    position: relative;
+    padding-top: var(--card-padding);
+}
+/* Fonts */
+.count-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.count-number{
+    color: var(--color-dark);
+    font-size: var(--h2-font-size);
+}
+.count-text{
+    color: var(--color-gray);
+    font-size: var(--normal-font-size);
+}
+.profile-name{
+    font-size: var(--h3-font-size);
+    color : var(--color-black);
+    opacity: .9;
+}
+.profile-username{
+    opacity: .7;
+    font-size: var(--normal-font-size);
+    color: var(--color-dark);
+}
+.bio-text{
+    margin-top: 10px;
+    font-size: var(--small-font-size);
+}
+.follow-btn{
+    color: var(--color-primary);
+    margin-left: 1rem;
+    border: 1.5px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+.follow-btn:focus , .follow-btn:hover{
+    color: var(--color-dark);
+    background-color: transparent;
+}
+.social-floats{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: var(--color-primary);
+}
+
+.icon-anime{
+    transform: translateY(0px);
+    animation: 2s float reverse infinite;
+}
+.icon-anime:first-child{
+    animation-delay: 1.5s;
+}
+.icon-anime:last-child{
+    animation-delay: .5s;
+}
+@keyframes float {
+    25%{
+        transform: translateY(-1px);
+    }
+    75%{
+        transform: translateY(1px);
+    }
+}
+
+
+/* Profile Page Bottom */
+.profile-bottom{
+    margin-top: 2rem;
+}
+/* feeds */
+.profile-bottom .feeds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 2rem ;
+}
+.profile-bottom .feeds .feed{
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    margin: 1rem 0;
+    font-size: .85rem;
+    line-height: 1.5;
+}
+.feed .head{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-bottom .feed .user {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile-bottom .feed .photo{
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: .7rem 0;
+    height: 250px;
+}
+.profile-bottom .feed .action-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: .6rem;
+}
+.profile-bottom  .liked-by{
+    display: flex;
+
+}
+.liked-by span{
+    width: 1.4rem;
+    height: 1.4rem;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-white);
+}
+.liked-by span:not(span:first-child){
+    margin-left:  -0.6rem;
+}
+.liked-by p{
+    margin-left: 0.5rem;
+}
+.comments{
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .profile-bottom .feeds{
+        grid-template-columns: 1fr;
+    }
+    .profile{
+        height: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 1fr;
+    }
+    .profile-left{
+        height: auto;
+    }
+    .profile-right{
+        padding: var(--card-padding);
+    }
+    .profile-image{
+        display: flex;
+        height: 150px;
+        width: 150px;
+        border-radius: var(--card-border-radius);
+    }
+    .follow-btn{
+        margin-left: .5rem;
+        padding: 5px 10px;
+    }
+}

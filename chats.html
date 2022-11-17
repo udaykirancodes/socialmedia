@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UdayChats - A Social Media Application to connect with your frinds</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chats.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -31,13 +32,13 @@
                 <div class="profile-photo">
                     <img src="./images/profile-1.jpg" alt="">
                 </div>
-                <div class="notifications-popup show">
+                <div class="notifications-popup hide">
                     <div>
                         <div class="profile-photo">
                             <img src="./images/profile-2.jpg" alt="">
                         </div>
                         <div class="notification-body">
-                            <b>Sweet_lover_uday</b>accepted your request
+                            <b>Sweet_lover_uday</b>accepted your chats
                             <small class="text-muted">2 Days Ago</small>
                         </div>
                     </div>
@@ -76,73 +77,178 @@
     </nav>
 
     <!-- MAIN -->
-    <main>
+    <section class="chats-container">
         <div class="container">
-            <!-- left -->
-            <div class="left">
-                <div class="profile">
-                    <div class="profile-photo">
-                        <img src="./images/profile-1.jpg" alt="">
+            <div class="chatsLeft">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." class="search-input">
+                </div>
+                <a href="./profile.html">
+                    <div class="chats">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="./images/profile-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="unread name">Uday Kiran</h5>
+                                <p class="text-muted unread">
+                                    Hello!!
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="handle">
-                        <h4>UdayCodes</h4>
-                        <p class="text-muted">@udaycodes</p>
+                </a>
+                    <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <!-- sidebar  -->
-                <div class="sidebar">
-                    <a class="menu-item active">
-                        <span><i class="uil uil-estate"></i>
-                            <h3>Home</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item active">
-                        <span><i class="uil uil-compass"></i>
-                            <h3>Explore</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item" id="notifications">
-                        <span><i class="uil uil-bell"><small class="notification-count">9+</small></i>
-                            <h3>Notifications</h3>
-                        </span>
-                        <!-- notification popup -->
-                        
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
-                            <h3>Bookmarks</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-bookmark"></i>
-                            <h3>Bookmarks</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-chart-line"></i>
-                            <h3>Analytics</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-palette"></i>
-                            <h3>Theme</h3>
-                        </span>
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-setting"></i>
-                            <h3>Settings</h3>
-                        </span>
-                    </a>
-                    </li>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chats">
+                    <div class="info">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h5 class="name">Uday Kiran</h5>
+                            <p class="text-muted">
+                                @UdayCodes
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <!-- middle -->
-              <div class="middle">
+            <div class="chatsRight">
                 <div class="activechat">
                     <div class="chathead">
                         <div class="profile">
+                            <span class="arrow">
+                                <i class="uil uil-arrow-left"></i>
+                            </span>
                             <div class="chatRef">
                                 <div class="profile-photo">
                                     <img src="./images/profile-1.jpg" alt="">
@@ -155,229 +261,133 @@
                             </div>
                         </div>
                     </div>
-                    <div class="conversations">
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
+                </div>
+                <div class="all-messeges">
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
                             </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatright">
-                            <div></div>
-                            <div class="profile">
-                                <p class="message">hello world </p>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatright">
-                            <div></div>
-                            <div class="profile">
-                                <p class="message">hello world </p>
-                            </div>
-                        </div>
-                        <div class="singlechat chatleft">
-                            <div class="profile">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                </div>
-                                <div class="messagebox">
-                                    <p class="message">hello world </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="singlechat chatright">
-                            <div></div>
-                            <div class="profile">
+                            <div class="messagebox">
                                 <p class="message">hello world </p>
                             </div>
                         </div>
                     </div>
-                    <div class="chatbottom">
-                        <div class="chatinput">
-                            <input type="text" class="messageinput" placeholder="Send message">
-                            <input type="button" class="btn btn" value="Send">
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world </p>
+                            </div>
                         </div>
                     </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hel Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, cum. lo world </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatright">
+                        <div></div>
+                        <div class="profile">
+                            <p class="message">hello world </p>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatright">
+                        <div></div>
+                        <div class="profile">
+                            <p class="message">hello world Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta molestiae facere rem itaque aliquam, culpa mollitia ipsam cum dolor? Lorem, ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="message">hello world </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="singlechat chatright">
+                        <div></div>
+                        <div class="profile">
+                            <p class="message">hello world </p>
+                        </div>
+                    </div>
+                    <div class="singlechat chatleft">
+                        <div class="profile">
+                            <div class="profile-photo">
+                                <img src="./images/profile-1.jpg" alt="">
+                            </div>
+                            <div class="messagebox">
+                                <p class="">
+                                    <div class="typing-effect">
+                                        <div class="dot dot1"></div>
+                                        <div class="dot dot2"></div>
+                                        <div class="dot dot3"></div>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="typing-area">
+                    <input type="text" class="incoming_id" name="incoming_id" value="<?php echo $user_id; ?>" hidden>
+                    <input type="text" name="message" class="input-field" placeholder="Type a message here..." autocomplete="off">
+                    <button class="message-send-btn"><i class="uil uil-telegram"></i></button>
                 </div>
             </div>
-            <div class="conversations">
-                <h4 class="text-muted">Conversations</h4>
-                <div class="allchats">
-                    <div class="chats">
-                        <div class="profile">
-                            <div class="chatRef">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                    <span class="chatactive"></span>
-                                </div>
-                            </div>
-                            <div class="handle">
-                                <h4 class="name">UdayCodes</h4>
-                                <p class="text-muted">Hello World</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chats">
-                        <div class="profile">
-                            <div class="chatRef">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                    <span class="chatactive"></span>
-                                </div>
-                            </div>
-                            <div class="handle">
-                                <h4 class="name">UdayCodes</h4>
-                                <p class="text-muted">Hello World</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chats">
-                        <div class="profile">
-                            <div class="chatRef">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                    <span class="chatactive"></span>
-                                </div>
-                            </div>
-                            <div class="handle">
-                                <h4 class="name">UdayCodes</h4>
-                                <p class="text-muted">Hello World</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chats">
-                        <div class="profile">
-                            <div class="chatRef">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-1.jpg" alt="">
-                                    <span class="chatactive"></span>
-                                </div>
-                            </div>
-                            <div class="handle">
-                                <h4 class="name">UdayCodes</h4>
-                                <p class="text-muted">Hello World</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
         </div>
-    </main>
-    <!-- CUSTOMIZATION  -->
-    <!-- <div class="customize-theme">
-        <div class="card">
-            <h2>Customize our view</h2>
-            <p>Manage your font size, color, and background theme.</p>
-            <div class="font-size">
-                <h4>Font Size</h4>
-                <div>
-                    <h6>Aa</h6>
-                    <div class="choose-size">
-                        <span class="font-size-1"></span>
-                        <span class="font-size-2"></span>
-                        <span class="font-size-3"></span>
-                        <span class="font-size-4"></span>
-                        <span class="font-size-5"></span>
-                    </div>
-                    <h3>Aa</h3>
-                </div>
-            </div>
-        </div>
-    </div> -->
+    </section>
     <script src="main.js"></script>
 </body>
 

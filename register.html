@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UdayChats - Login </title>
+    <title>UdayChats - Register </title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="auth.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -23,17 +23,38 @@
         <div class="login-area">
             <div class="loginMain">
                 <div class="loginLeft">
-                    <h3 class="logo">Login</h3>
+                    <h3 class="logo">Register</h3>
                     <p class="description">Welcome to <span class="login-logo-text">UdayChats </span>by <span class="login-logo-text">UdayKiran</span></p>
-                    <div class="input_area">
+                    <div class="input_area register-area">
                         <div class="input_box">
                             <label  class="label">Email <span class="required">*</span></label>
                             <div class="input_container">
                                 <input type="email" class="input login-input" placeholder="example@gmail.com" required>
                             </div>
                         </div>
+                        <div class="input_box"></div>
+                        <div class="input_box">
+                            <label  class="label">First Name<span class="required">*</span></label>
+                            <div class="input_container">
+                                <input type="text" class="input login-input" placeholder="Udaykiran" required>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <label  class="label">Last Name<span class="required">*</span></label>
+                            <div class="input_container">
+                                <input type="text" class="input login-input" placeholder="Bandarugalla" required>
+                            </div>
+                        </div>
                         <div class="input_box">
                             <label  class="label">Password <span class="required">*</span></label>
+                            <div class="input_container password-eye">
+                                <i class="eye uil uil-eye-slash"></i>
+                                <!-- <i class="eye uil uil-eye"></i> -->
+                                <input type="password" class="input login-input" required>
+                            </div>
+                        </div>
+                        <div class="input_box">
+                            <label  class="label">Confirm Password <span class="required">*</span></label>
                             <div class="input_container password-eye">
                                 <i class="eye uil uil-eye-slash"></i>
                                 <!-- <i class="eye uil uil-eye"></i> -->
@@ -45,8 +66,8 @@
                         <p class="forgot-link">Forgot Password ?</p>
                     </div>
                     <div class="button-container">
-                        <button class="btn btn-large">Login</button>
-                        <button class="btn btn-2"><a href="./register.html">Register</a></button>
+                        <button class="btn btn-large">Register</button>
+                        <button class="btn btn-2"><a href="./login.html">Login</a></button>
                     </div>
                     <div class="or-text-box">
                         <div class="line"></div>

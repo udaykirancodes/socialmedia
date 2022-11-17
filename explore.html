@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UdayChats - A Social Media Application to connect with your frinds</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="explore.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -20,80 +21,7 @@
             </a>
             <div class="search-bar">
                 <i class="uil uil-search"></i>
-                <input type="search" class="search" placeholder="Search for creators, inspirations and projects">
-                <!-- Search Suggestion -->
-                <div class="search-active">
-                <div class="search-users-list">
-                    <a href="./profile.html">
-                        <div class="request">
-                            <div class="info">
-                                <div class="profile-photo">
-                                    <img src="./images/profile-2.jpg" alt="">
-                                </div>
-                                <div>
-                                    <h5>Uday Kiran</h5>
-                                    <p class="text-muted">
-                                        @UdayCodes
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                        <div class="request">
-                        <div class="info">
-                            <div class="profile-photo">
-                                <img src="./images/profile-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Uday Kiran</h5>
-                                <p class="text-muted">
-                                    @UdayCodes
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-photo">
-                                <img src="./images/profile-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Uday Kiran</h5>
-                                <p class="text-muted">
-                                    @UdayCodes
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-photo">
-                                <img src="./images/profile-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Uday Kiran</h5>
-                                <p class="text-muted">
-                                    @UdayCodes
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="request">
-                        <div class="info">
-                            <div class="profile-photo">
-                                <img src="./images/profile-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <h5>Uday Kiran</h5>
-                                <p class="text-muted">
-                                    @UdayCodes
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
+                <input type="search" placeholder="Search for creators, inspirations and projects">
             </div>
             <div class="create">
                 <a href="./chats.html" class="notifref"><i class="uil uil-envelope-alt"><small class="notification-count">9+</small></i>
@@ -149,36 +77,33 @@
 
     <!-- MAIN -->
     <main>
-        <div class="container">
+        <div class="explore-page">
             <!-- left -->
-            <div class="left">
-                <a href="./profile.html">
+            <!-- <div class="left">
                 <div class="profile">
-                        <div class="profile-photo">
-                            <img src="./images/profile-1.jpg" alt="">
-                        </div>
-                        <div class="handle">
-                            <h4>UdayCodes</h4>
-                            <p class="text-muted">@udaycodes</p>
-                        </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" alt="">
                     </div>
-                </a>
+                    <div class="handle">
+                        <h4>UdayCodes</h4>
+                        <p class="text-muted">@udaycodes</p>
+                    </div>
+                </div>
 
-                <!-- sidebar  -->
                 <div class="sidebar">
-                    <a href="./index.html" class="menu-item active">
+                    <a class="menu-item active">
                         <span><i class="uil uil-estate"></i>
                             <h3>Home</h3>
                         </span>
                     </a>
-                    <a href="./explore.html" class="menu-item active">
+                    <a class="menu-item active">
                         <span><i class="uil uil-compass"></i>
                             <h3>Explore</h3>
                         </span>
                     </a>
-                    <a href="./requests.html" class="menu-item" id="notifications">
+                    <a class="menu-item" id="notifications">
                         <span><i class="uil uil-bell"><small class="notification-count">9+</small></i>
-                            <h3>Requests</h3>
+                            <h3>Notifications</h3>
                         </span>
                     </a>
                     <a class="menu-item">
@@ -208,18 +133,10 @@
                     </a>
                     </li>
                 </div>
-            </div>
+            </div> -->
 
             <!-- middle -->
             <div class="middle">
-                <div class="create-post">
-                    <div class="profile-photo">
-                        <img src="./images/profile-10.jpg" alt="">
-                    </div>
-                    <input type="text" placeholder="What's on your mind ?" id="create-post">
-                    <input type="submit" value="Post" class="btn btn-primary">
-                </div>
-
                 <div class="feeds">
                     <div class="feed">
                         <div class="head">
@@ -282,6 +199,94 @@
                         </div>
                         <div class="photo">
                             <img src="./images/feed-3.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-feed"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <p>Liked by<b>UdayCodes</b>and <b>2032 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>UdayCodes</b>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 324 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="user profile-photo">
+                                    <img src="./images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>udayCodes</h3>
+                                    <small>Dubai</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-7.jpg" alt="">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-feed"></i></span>
+                            </div>
+                        </div>
+
+                        <div class="liked-by">
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <span><img src="./images/profile-10.jpg" alt=""></span>
+                            <p>Liked by<b>UdayCodes</b>and <b>2032 others</b> </p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>UdayCodes</b>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <div class="comments text-muted">
+                            View all 324 comments
+                        </div>
+                    </div>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="user profile-photo">
+                                    <img src="./images/profile-5.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <h3>udayCodes</h3>
+                                    <small>Dubai</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+                        <div class="photo">
+                            <img src="./images/feed-7.jpg" alt="">
                         </div>
 
                         <div class="action-button">
@@ -445,7 +450,7 @@
             </div> 
             
             
-            <div class="right">
+            <!-- <div class="right">
                 <div class="friend-requests">
                     <div class="request">
                         <div class="info">
@@ -535,21 +540,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  -->
             
         </div>
     </main>
-    <script>
-        let a = document.querySelector('.search');
-        let b = document.querySelector('.search-active');
-        a.addEventListener('input',()=>{
-            if(a.value){
-                b.style.display = 'block'
-            }else{
-                b.style.display = 'none'
-            }
-        })
-    </script>
     <script src="main.js"></script>
 </body>
 
